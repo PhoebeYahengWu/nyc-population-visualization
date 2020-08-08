@@ -22,9 +22,13 @@ class App extends Component {
   render() {
     return (
       <div className="container"> 
-      <h1>NYC Population Tracker</h1>
+      <h1 className="text-center mt-3">NYC Population Tracker</h1>
+      <div className="row justify-content-center mt-3 mb-3">
       <BoroughPicker boroughs={this.state.data} handleBoroughChange={this.handleBoroughChange}/>
+      </div>
+     
       <Chart data={this.state.data} borough={this.state.borough}/>
+     
       </div>
     );
   }
