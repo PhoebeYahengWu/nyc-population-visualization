@@ -13,7 +13,6 @@ class App extends Component {
   async componentDidMount() {
     const fetchedData = await fetchBoroughs();
     this.setState({data: fetchedData});
-    console.log(fetchedData)
   }
 
   handleBoroughChange = async (borough) => {
@@ -30,4 +29,4 @@ class App extends Component {
     );
   }
 }
-export default App;
+export default App; 
